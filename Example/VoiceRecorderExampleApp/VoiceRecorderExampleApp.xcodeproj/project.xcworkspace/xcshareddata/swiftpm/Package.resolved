@@ -1,0 +1,24 @@
+{
+  "originHash" : "73fa5ca9d39911b709725b353075c2845837b3df2a411576b6bce8ce1ebfb075",
+  "pins" : [
+    {
+      "identity" : "snapkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/SnapKit/SnapKit.git",
+      "state" : {
+        "revision" : "2842e6e84e82eb9a8dac0100ca90d9444b0307f4",
+        "version" : "5.7.1"
+      }
+    },
+    {
+      "identity" : "voice-recorder-kit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/berkenOzbek-swift/voice-recorder-kit",
+      "state" : {
+        "revision" : "6f6145aded1989ffd80a5c06666fe33a09b046ca",
+        "version" : "1.0.1"
+      }
+    }
+  ],
+  "version" : 3
+}

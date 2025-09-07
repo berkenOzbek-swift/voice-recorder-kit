@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23727" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23721"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="VoiceRecordView" customModule="voice_recorder_kit">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="aCT-ar-XKr"/>
+                <outlet property="liveWaveFormView" destination="LTN-up-78O" id="Uxw-Ka-Gye"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="385"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Ur-Th-pjf">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="385"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jvi-Z5-0hM">
+                            <rect key="frame" x="42" y="176" width="309" height="100"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTN-up-78O" customClass="LiveWaveformView" customModule="voice_recorder_kit">
+                                    <rect key="frame" x="0.0" y="0.0" width="309" height="100"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="100" id="tBi-Tw-Guc"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="LTN-up-78O" firstAttribute="leading" secondItem="Jvi-Z5-0hM" secondAttribute="leading" id="PTh-r7-IGc"/>
+                                <constraint firstAttribute="trailing" secondItem="LTN-up-78O" secondAttribute="trailing" id="Zd9-O5-tHj"/>
+                                <constraint firstItem="LTN-up-78O" firstAttribute="top" secondItem="Jvi-Z5-0hM" secondAttribute="top" id="av6-31-WfN"/>
+                                <constraint firstAttribute="bottom" secondItem="LTN-up-78O" secondAttribute="bottom" id="hrv-Yx-Ts9"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Jvi-Z5-0hM" secondAttribute="trailing" constant="42" id="0eV-RA-jok"/>
+                        <constraint firstItem="Jvi-Z5-0hM" firstAttribute="centerX" secondItem="3Ur-Th-pjf" secondAttribute="centerX" id="8ML-lS-OXS"/>
+                        <constraint firstItem="Jvi-Z5-0hM" firstAttribute="leading" secondItem="3Ur-Th-pjf" secondAttribute="leading" constant="42" id="l9J-Xt-mAF"/>
+                        <constraint firstAttribute="bottom" secondItem="Jvi-Z5-0hM" secondAttribute="bottom" constant="109" id="sa3-nk-DfR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3Ur-Th-pjf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="5mE-6u-SyS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="3Ur-Th-pjf" secondAttribute="trailing" id="JbA-kq-d6a"/>
+                <constraint firstItem="3Ur-Th-pjf" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Y0M-O4-Dj1"/>
+                <constraint firstAttribute="bottom" secondItem="3Ur-Th-pjf" secondAttribute="bottom" id="hi2-Ty-YJ0"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="132.60869565217394" y="82.700892857142847"/>
+        </view>
+        <panGestureRecognizer minimumNumberOfTouches="1" id="nE1-4l-3bX"/>
+    </objects>
+</document>
